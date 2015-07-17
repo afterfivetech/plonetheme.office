@@ -1,0 +1,511 @@
+/*FOUNDATION/PLONE DEFAULT CONFLICT CLASSES */
+/*class ROW*/
+ div.row {
+  float: none !important;
+  display: block;
+  position: relative;
+}
+/*class COLUMN*/
+th.column{
+	padding: 0;
+	float: none;
+	width: auto;
+	position: inherit;
+}
+/*Table*/
+table.listing,
+table.sequencewidget,
+table.ordered-selection-field{
+	width: inherit;
+}
+/*table class listing*/
+table.listing {
+    th:last-child{
+        float: none !important;
+    }
+    tbody{
+        word-break: break-all;
+    }
+}
+/*class LABEL*/
+.template-atct_image_transform #content-core > div.label,
+.formQuestion.label{
+    background: none transparent;
+    padding: 0;
+    line-height: normal;
+    text-align: left;
+    position: static;
+    margin: auto;
+    white-space: normal;
+    color: #000;
+    font-size: inherit;
+}
+.formQuestion,
+#content input[type="checkbox"] + label, input[type="radio"] + label{
+    display: inline;
+}
+label .label{
+	background: none;
+	font-size: inherit;
+	padding: 0;
+	color: #4d4d4d;
+}
+/*start fix for foundation button*/
+#content ul.button-group{
+	list-style-type: none;
+	margin-left: 0;
+}
+/*end fix for foundation button*/
+
+/*start configlets*/
+ul.configlets {
+    margin: 1em 0;
+    list-style-image: none;
+    list-style: none;
+}
+
+/*start - field adjustment*/
+.field{
+	.widget{
+		.label{
+			text-align: left;
+			background: none;
+		}
+	}
+	table.ordered-selection-field{
+		button[name='upButton'],
+		button[name='downButton'],
+		button[name='from2toButton'],
+		button[name='to2fromButton']{
+			padding-top: 0.55556rem;
+			padding-right: 1.11111rem;
+			padding-bottom: 0.61111rem;
+			padding-left: 1.11111rem;
+			font-size: 0.61111rem;
+		}
+	}
+}
+/*end field adjustment*/
+
+/*input type*/
+input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+	@include button;
+}
+#content input[type="submit"],
+#content input[type="reset"]{
+    margin-right: 3px;
+}
+#content input[type="submit"]:last-child,
+#content input[type="reset"]:last-child{
+    margin-right: 0;
+}
+/*end - field adjustment*/
+
+/*fix for calendar/select date  */
+.calendar{
+    z-index: 99;
+    table{
+        margin-bottom: 0;
+    }
+    .button{
+        color: #000;
+        margin-bottom: 0;
+        display: table-cell;
+    }
+}
+
+/*start criteria*/
+.criteria {
+	dl.multipleSelectionWidget{
+		background-color: #FAFAFA;
+		border: 1px solid #CCC;
+		padding: 0.5rem;
+		font-size: 0.875rem;
+		border-radius: 0px;
+		height: 2.3125rem;
+		margin-right: 10px;
+		width: auto;
+		dt{
+			border: none;
+		}
+	}
+	input.removecriteria{
+		margin-left: 5px;
+		padding: 10px;
+		color: #fff !important;
+	}
+}
+.sortingField{
+	label{
+		display: inline;
+	}
+}
+/*end criteria*/
+
+/*start tags*/
+dl.newTagsSection{
+	dd{
+		textarea{
+			display: inline;
+		}
+	}
+}
+/*end tags*/
+
+/*start search filter*/
+#search-filter{
+	input[type="checkbox"],
+	input[type="radio"],
+	input[type="checkbox"],
+	input[type="radio"]{
+		margin-bottom: 0;
+	}
+	.field{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	legend{
+		font-size: 14px !important;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+/*end search filter*/
+
+/*start login*/
+#fieldset-openid-login input, #login-form input {
+    display: inline;
+    width: auto;
+}
+/*end login*/
+
+/*edit page - css adjustment for title and description fields*/
+#content .field input[type="text"][name$=".title"],
+#archetypes-fieldname-title input,
+#content .field textarea[name$=".description"],
+#archetypes-fieldname-description textarea#description{
+	font-size: inherit;
+	font-weight: normal;
+}
+
+/*start formhelp*/
+.formHelp{
+	/*font-size: 12px;*/
+	font-weight: normal;
+	color: #6f6f6f;
+}
+/*end formhelp*/
+
+/*select, input[text] on widescreen*/
+@media only screen and (min-width: 40.063em){
+	.datetime-field,
+	.date-field{
+		display: inline !important;
+		margin-bottom: 0;
+	}
+	#calroot{
+		box-sizing: content-box;
+	}
+	#caltitle{
+		select {
+			font-size: 10px;
+			width: auto;
+			padding: 0;
+			margin: 0;
+			height: auto;
+		}
+	}
+    #content select{
+        width: auto;
+        height: auto;
+        vertical-align: middle;
+    }
+	#content label select{
+		width: 100%;
+	}
+	
+    form#groups_search,
+    form#users_search {
+        overflow-x: scroll;
+        input.quickSearch{
+            width: auto;
+            display: inline;
+        }
+        input.searchButton{
+            padding: 8px;
+        }
+    }
+}
+
+/*viewlet-below-content*/
+#viewlet-below-content:before{
+	display: block;
+	clear: both;
+	content: ' ';
+}
+
+/*start comments*/
+.discussion{
+    .commentImage img{
+        height: 32px;
+    }
+    input[name="form.button.DeleteComment"]{
+        padding-top: 0.55556rem;
+		padding-right: 1.11111rem;
+		padding-bottom: 0.61111rem;
+		padding-left: 1.11111rem;
+		font-size: 0.61111rem;
+    }
+	.commentBody{
+		font-style: italic;
+		font-weight: normal;
+		color: #76797C;
+	}
+}
+#commenting{
+    .formControls{
+        input[type="submit"]{
+            margin-right: 5px;
+        }
+    }
+}
+/*end comments*/
+
+/*start custom style for edit bar*/
+#edit-bar{
+    ul,dl{
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+}
+#edit-bar:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* @group LiveSearch */
+
+#LSResult {
+    position: absolute;
+    right: 0;
+    background: White;
+    margin: 0;
+	z-index: 100;
+}
+
+#LSResult fieldset {
+    padding: 1em 0 0;
+    border: 0.1em solid #ccc;
+}
+
+#livesearchLegend {
+    background-color:#ccc;
+    padding:0.3em;
+}
+
+#LSResult .LSDescr {
+    font-size: 85%;
+    color: #666;
+}
+
+.LSRow,
+#LSNothingFound {
+    display: block;
+    padding: 0.5em 1em;
+    white-space: normal;
+    width:28em;
+}
+
+.LSHighlight {
+    background: #ddd;
+}
+
+/* @end */
+
+/*Faceted Criteria*/
+#faceted-edit-widgets-ajax{
+	#export_button, #import_button{
+		margin-left: 5px;
+		padding: 10px;
+		color: #fff !important;
+	}
+}
+
+/*Search Page*/
+form.searchPage{
+	#search-field{
+		input{
+			display: inline;
+		}
+		input[type="submit"]{
+			padding: 0 10px;
+			border: 1px solid #ccc;
+		}
+		input[type="text"]{
+			width: 60%;
+			padding: 10px;
+		}
+	}
+}
+
+/*Sharing buttons*/
+input#sharing-user-group-search,
+input#sharing-search-button{display: inline}
+input#sharing-search-button{
+	padding: 8px 10px;
+}
+
+/*Content Chooser*/
+input#contentchooser-content-trees,
+input#contentchooser-content-search-input{
+	box-shadow: none;
+	padding: 0;
+	margin: 0;
+}
+
+/*Tile Configure*/
+#configure_tile input[type=radio] + label{
+	margin: 0;
+}
+
+/*manage portlet*/
+div.portletAssignments{
+  font-size: inherit !important;
+}
+div.portletAssignments .managedPortletActions a, div.portletAssignments .managedPortletActions button {
+	padding: 0;
+}
+
+/*assign rule*/
+input[name='form.button.AddAssignment']{
+	padding: 8px;
+	vertical-align: middle;
+}
+
+/*contents query*/
+input[name="form.contents.query"]{
+	display: inline;
+	+ input[name="form.contents.search"]{
+		padding: 8px;
+	}
+}
+
+/*subscribers*/
+form[action="enl_subscribers_view"]{
+	span{
+		background: none transparent;
+		color: inherit;
+		font-size: inherit;
+		line-height: inherit;
+		padding: 0;
+	}
+	input[type="submit"]{
+		padding: 8px;
+	}
+}
+
+/*field required*/
+.field{
+	label[for="form.email"],
+	label[for="form.current_password"],
+	label[for="form.new_password"],
+	label[for="form.new_password_ctl"],
+	label[for="sender_from_address"],
+	label[for="subject"],
+	label[for="message"]{
+		display: inline;
+	}
+	.fieldRequired{
+		color: #ECECEC !important;
+	}
+	
+}
+
+/*portal-column-one under portal-column-content*/
+#portal-column-content #portal-column-one{
+	display: none;
+}
+
+/*upload image*/
+#uploadbutton{margin-top: 0 !important;}
+#footer #action-button{margin-bottom: -10px !important;}
+
+/*search base button*/
+#formfield-form-search_base {
+	input[id='form.search_base']{display: inline}
+	input[name='form.search_base.search']{
+		padding-top: 0.55556rem;
+		padding-right: 1.11111rem;
+		padding-bottom: 0.61111rem;
+		padding-left: 1.11111rem;
+	}
+	input[name='form.search_base.browse.'],
+	input[name='form.search_base.browse./en'],
+	input[name='form.search_base.browse./es'],
+	input[name='form.search_base.browse./shared']{
+		padding-top: 0.55556rem;
+		padding-right: 1.11111rem;
+		padding-bottom: 0.61111rem;
+		padding-left: 1.11111rem;
+		font-size: 0.61111rem;
+	}
+}
+
+/*faceted*/
+#center-and-left-area #left-area{
+	width: 24em;
+}
+.faceted_letter,
+.faceted-empty-column {
+	color: inherit !important;
+}
+
+/*viewlet below content body*/
+#viewlet-below-content-body:before{
+	content: ' ';
+	clear: both;
+	display: block;
+}
+
+/*datagridwidget-table-view*/
+.datagridwidget-table-view{
+	border-collapse: collapse;
+	border: none;
+}
+/*byline portrait*/
+.byline-portrait{
+	height: 24px;
+	width: 24px;
+}
+/*description*/
+#content .documentDescription,
+#content #description {
+    color: #666;
+    margin-left: 0;
+    font-size: 1.25em;
+	font-weight: bold;
+}
+
+/*internallinkcontainer + radioscrolllist*/
+#internallinkcontainer.radioscrolllist{
+    .list.item{
+	padding: 0.5em;
+	span,
+	a{
+	    margin-top: -5px;
+	}
+    }
+}
+#details-fields.widget.radioscrolllist{
+    .field{
+	.widget{
+	    select,
+	    input{
+		margin-bottom: 0 !important;
+	    }
+	}
+    }
+}
