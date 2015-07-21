@@ -33,6 +33,7 @@
         </xsl:if>
     </replace>
     
+    <!--Main search-->
     <replace css:theme-children="#search-container">
         <form class="search-site"><xsl:attribute name="action">
             <xsl:value-of select="//*[@id='portal-searchbox']/form/@action"/></xsl:attribute>
@@ -42,6 +43,13 @@
                 <xsl:copy-of css:select="#LSResult"/>
             </div>
         </form>
+    </replace>
+    
+    <!--footer-->
+    <replace css:theme-children="#footer-container > div > div">
+        <xsl:copy-of css:select="#portal-footer > p"/>
+        <xsl:copy-of css:select="#portal-colophon > div > ul"/>
+        <xsl:copy-of css:select="#portal-siteactions"/>
     </replace>
     
     <!--replace theme content-->

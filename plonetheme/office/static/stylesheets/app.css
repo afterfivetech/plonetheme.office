@@ -5838,6 +5838,15 @@ th.hide-for-touch {
   .featured-widget h2 {
     margin: 15px 0; }
 
+/*footer*/
+#footer-container {
+  text-align: center; }
+  #footer-container ul {
+    list-style: none;
+    margin: 0; }
+    #footer-container ul li {
+      display: inline; }
+
 /*media queries*/
 @media only screen {
   #search-container form input[type=button] {
