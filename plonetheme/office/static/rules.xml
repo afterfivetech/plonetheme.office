@@ -33,6 +33,9 @@
         </xsl:if>
     </replace>
     
+    <!--navigation-->
+    <replace css:theme-children="#portal-globalnav" css:content-children="#portal-globalnav"/>
+    
     <!--Main search-->
     <replace css:theme-children="#search-container">
         <form class="search-site"><xsl:attribute name="action">
