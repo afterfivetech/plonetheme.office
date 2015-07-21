@@ -5812,6 +5812,11 @@ th.hide-for-touch {
   margin-bottom: 10px; }
   #user a {
     color: #848e9c; }
+  #user #action-menu-content {
+    list-style: none;
+    margin: 0; }
+    #user #action-menu-content li {
+      display: inline; }
 
 #search-container {
   margin-bottom: 10px; }
@@ -5845,7 +5850,7 @@ th.hide-for-touch {
     display: inline;
     margin-bottom: 0;
     font-size: 14px; }
-  #search-container form input[type=search] {
+  #search-container form input[type=search], #search-container form input[type=text] {
     padding: 5px;
     border-radius: 5px;
     height: auto;
@@ -5857,7 +5862,10 @@ th.hide-for-touch {
     background: #8cab22;
     color: #fff;
     padding: 5px;
-    margin: 5px 0; } }
+    margin: 5px 0; }
+  #search-container #LSResult.LSResult {
+    padding: 0 10px;
+    text-align: left; } }
 
 
 /*# sourceMappingURL=app.css.map */
