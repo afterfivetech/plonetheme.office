@@ -5874,7 +5874,11 @@ th.hide-for-touch {
     margin: 5px 0; }
   #search-container #LSResult.LSResult {
     padding: 0 10px;
-    text-align: left; } }
+    text-align: left; }
+  /*form element*/
+  select {
+    width: auto;
+    padding-right: 1rem; } }
 
 
 /*# sourceMappingURL=app.css.map */
