@@ -21,12 +21,12 @@
 
     <!-- -*- Main CSS -*- -->
     <stylesheet title="Main CSS"
-        id="++theme++plonetheme.office/stylesheets/app.css"
+        id="++theme++plonetheme.office/stylesheets/plone-enhancement.css"
         media="screen" rel="stylesheet" rendering="link"
         cacheable="False" compression="safe" cookable="False"
         enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing" applyPrefix="True" insert-before="*"/>
     <stylesheet title="Main CSS"
-        id="++theme++plonetheme.office/stylesheets/plone-enhancement.css"
+        id="++theme++plonetheme.office/stylesheets/app.css"
         media="screen" rel="stylesheet" rendering="link"
         cacheable="False" compression="safe" cookable="False"
         enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing" applyPrefix="True" insert-before="*"/>
