@@ -17,3 +17,4 @@ label .label{background:none;font-size:inherit;padding:0;color:#4d4d4d}
 #LSResult .LSDescr{font-size:85%;color:#666}
 .LSRow,#LSNothingFound{display:block;padding:.5em 1em;white-space:normal;width:28em}
 .LSHighlight{background:#ddd}
+.configlets{list-style:none;margin-left:0}
