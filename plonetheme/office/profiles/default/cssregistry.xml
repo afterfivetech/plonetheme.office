@@ -2,63 +2,34 @@
 <!-- This file holds the setup configuration for the portal_css tool. -->
 <object name="portal_css">
     
-    <!-- These are the Sunburst-styles which we want to include in our custom
-       theme. They are configured to be in the "default" bundle.
+    <!-- They are configured to be in the "default" bundle.
        Note: by default, all styles land in the "default" bundle. So this
        configuration isn't strictly necessary. -->
-    <stylesheet bundle="default" id="authoring.css"/>
-    <stylesheet bundle="default" id="base.css"/>
-    <stylesheet bundle="default" id="controlpanel.css"/>
-    <stylesheet bundle="default" id="forms.css"/>
-    <stylesheet bundle="default" id="IEFixes.css"/>
-    <stylesheet bundle="default" id="member.css"/>
-    <stylesheet bundle="default" id="reset.css"/>
-    <stylesheet bundle="default" id="RTL.css"/>
+    <!--<stylesheet bundle="default" id=""/>-->
     
-    <stylesheet bundle="default" id="columns.css"/>
-
-    <!-- These are Sunburst-design specific styles, which we do not want to
-         include in our theme. They are configured to be in the "sunburst"
-         bundle. -->
-    <!--<stylesheet bundle="sunburst" id="columns.css"/>-->
-    <stylesheet bundle="sunburst" id="deprecated.css"/>
-    <stylesheet bundle="sunburst" id="invisibles.css"/>
-    <stylesheet bundle="sunburst" id="kupuplone.css"/>
-    <stylesheet bundle="sunburst" id="mobile.css"/>
-    <stylesheet bundle="sunburst" id="navtree.css"/>
-    <stylesheet bundle="sunburst" id="portlets.css"/>
-    <stylesheet bundle="sunburst" id="print.css"/>
-    <stylesheet bundle="sunburst" id="public.css"/>
-  
-    <!-- This is your custom style -->
-    <!--<stylesheet bundle="mycustombundle" id="++theme++plonetheme.office/stylesheets/app.css" insert-after="*"
-        cacheable="True" compression="safe" cookable="True" enabled="True"
-        expression="" media="screen" rel="stylesheet" rendering="link"/>-->
-    
-    <!--<stylesheet title=""
-        id="public.css" expression="python: ('@@theming-controlpanel' in request.getURL() and request.HTTP_X_THEME_ENABLED) or not request.HTTP_X_THEME_ENABLED"/>
+    <!--Styles which removed in Theme-->
     <stylesheet title=""
-        id="mobile.css" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
-    <stylesheet title=""
-        id="portlets.css" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
+        id="public.css" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
     <stylesheet title=""
         id="reset.css" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
     <stylesheet title=""
+        id="mobile.css" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
+    <stylesheet title=""
         id="forms.css" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
     <stylesheet title=""
-        id="member.css" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>-->
+        id="member.css" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
 
-    <!-- -*- extra stuff goes here -*- -->
+    <!-- -*- Main CSS -*- -->
     <stylesheet title="Main CSS"
         id="++theme++plonetheme.office/stylesheets/app.css"
-        media="screen" rel="stylesheet" rendering="import"
+        media="screen" rel="stylesheet" rendering="link"
         cacheable="False" compression="safe" cookable="False"
-        enabled="1" expression="python: request.HTTP_X_THEME_ENABLED and not '@@theming-controlpanel' in request.getURL()" applyPrefix="True" insert-before="*"/>
-    <!--<stylesheet title="Main CSS"
+        enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing" applyPrefix="True" insert-before="*"/>
+    <stylesheet title="Main CSS"
         id="++theme++plonetheme.office/stylesheets/plone-enhancement.css"
-        media="screen" rel="stylesheet" rendering="import"
+        media="screen" rel="stylesheet" rendering="link"
         cacheable="False" compression="safe" cookable="False"
-        enabled="1" expression="python: request.HTTP_X_THEME_ENABLED and not '@@theming-controlpanel' in request.getURL()" applyPrefix="True" insert-before="*"/>-->
+        enabled="1" expression="request/HTTP_X_THEME_ENABLED | nothing" applyPrefix="True" insert-before="*"/>
 
 </object>
 
