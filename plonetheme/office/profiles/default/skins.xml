@@ -8,4 +8,8 @@
         <layer name="plonetheme_office"
                 insert-after="custom"/>
     </skin-path>
+    <skin-path name="mycustom_skin">
+        <layer name="plonetheme_office"
+           insert-after="custom"/>
+    </skin-path>
 </object>

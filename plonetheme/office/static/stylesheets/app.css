@@ -5847,6 +5847,95 @@ th.hide-for-touch {
     #footer-container ul li {
       display: inline; }
 
+/*plone public css*/
+/* @group LiveSearch */
+#LSResult {
+  position: absolute;
+  right: 0;
+  background: White;
+  z-index: 99; }
+
+#LSResult fieldset {
+  padding: 1em 0 0;
+  border: 0.1em solid #ccc; }
+
+#livesearchLegend {
+  background-color: #ccc;
+  padding: 0.3em; }
+
+#LSResult .LSDescr {
+  font-size: 85%;
+  color: #666; }
+
+.LSRow, #LSNothingFound {
+  display: block;
+  padding: 0.5em 1em;
+  white-space: normal;
+  width: 28em; }
+
+.LSHighlight {
+  background: #ddd; }
+
+/* @end */
+/*FOUNDATION/PLONE DEFAULT CONFLICT CLASSES */
+/*class ROW*/
+div.row {
+  float: none !important;
+  display: block;
+  position: relative; }
+
+/*class COLUMN*/
+th.column {
+  padding: 0;
+  float: none;
+  width: auto;
+  position: inherit; }
+
+/*Table*/
+table.listing, table.sequencewidget, table.ordered-selection-field {
+  width: inherit; }
+
+/*table class listing*/
+table.listing th:last-child {
+  float: none !important; }
+table.listing tbody {
+  word-break: break-all; }
+
+/*class LABEL*/
+.template-atct_image_transform #content-core > div.label, .formQuestion.label {
+  background: none transparent;
+  padding: 0;
+  line-height: normal;
+  text-align: left;
+  position: static;
+  margin: auto;
+  white-space: normal;
+  color: #000;
+  font-size: inherit; }
+
+.formQuestion, #content input[type="checkbox"] + label, input[type="radio"] + label {
+  display: inline; }
+
+label .label {
+  background: none;
+  font-size: inherit;
+  padding: 0;
+  color: #4d4d4d; }
+
+#edit-bar ul {
+  margin: 0;
+  font-size: inherit;
+  top: -1px; }
+  #edit-bar ul li {
+    display: inline; }
+    #edit-bar ul li a {
+      line-height: 19px; }
+#edit-bar dl {
+  margin: 0;
+  font-size: inherit; }
+  #edit-bar dl dt {
+    margin-bottom: 0; }
+
 /*media queries*/
 @media only screen {
   #search-container form input[type=button] {
