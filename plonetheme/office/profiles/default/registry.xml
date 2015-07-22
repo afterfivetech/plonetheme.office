@@ -8,7 +8,6 @@
       <element key="mycustom_skin">
         <element>jquery</element>
         <element>default</element>
-        <element>mycustombundle</element>
       </element>
     </value>
   </record>
