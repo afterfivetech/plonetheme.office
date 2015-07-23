@@ -5878,7 +5878,9 @@ th.hide-for-touch {
   /*form element*/
   select {
     width: auto;
-    padding-right: 1rem; } }
+    padding-right: 1rem; }
+  input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {
+    width: auto; } }
 
 
 /*# sourceMappingURL=app.css.map */

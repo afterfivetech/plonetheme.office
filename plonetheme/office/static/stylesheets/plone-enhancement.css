@@ -18,3 +18,7 @@ label .label{background:none;font-size:inherit;padding:0;color:#4d4d4d}
 .LSRow,#LSNothingFound{display:block;padding:.5em 1em;white-space:normal;width:28em}
 .LSHighlight{background:#ddd}
 .configlets{list-style:none;margin-left:0}
+.criteria dl.multipleSelectionWidget{background-color:#FAFAFA;border:1px solid #CCC;padding:.5rem;font-size:.875rem;border-radius:0;height:2.3125rem;margin-right:10px;width:auto}
+.criteria dl.multipleSelectionWidget dt{border:none}
+.criteria input.removecriteria{margin-left:5px;padding:10px;color:#fff!important}
+.sortingField label{display:inline}
