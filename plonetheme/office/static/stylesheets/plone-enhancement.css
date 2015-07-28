@@ -49,7 +49,7 @@ form#groups_search input.searchButton,form#users_search input.searchButton{paddi
 #edit-bar dl{margin:0;font-size:inherit}
 #edit-bar dl dt{margin-bottom:0}
 #edit-bar:after{content:"";display:block;clear:both}
-#LSResult{position:absolute;right:0;background:#fff;margin:0;z-index:100}
+#LSResult{position:absolute;left:0.9375rem;background:#fff;margin:0;z-index:100;text-align:left}
 #LSResult fieldset{padding:1em 0 0;border:.1em solid #ccc}
 #livesearchLegend{background-color:#ccc;padding:.3em}
 #LSResult .LSDescr{font-size:85%;color:#666}

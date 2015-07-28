@@ -5872,6 +5872,8 @@ th.hide-for-touch {
     color: #fff;
     padding: 5px;
     margin: 5px 0; }
+  #search-container #LSResult {
+    right: 0.9375rem; }
   #search-container #LSResult.LSResult {
     padding: 0 10px;
     text-align: left; }
@@ -5882,5 +5884,5 @@ th.hide-for-touch {
   input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {
     width: auto; } }
 
-
+/*@import "plone-enhancement";*/
 /*# sourceMappingURL=app.css.map */
