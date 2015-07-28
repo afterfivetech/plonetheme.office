@@ -2,7 +2,7 @@
 
 dl.portlet {
     margin: 0 0 1em;
-    font-size: 80%;
+    /*font-size: 80%;*/
 }
 dl.portletError {
     background-color: #FFA500;
@@ -179,3 +179,17 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 }
 
 /* @end */
+
+/* @group Search portlet */
+dl.portletSearch dt{
+    margin-bottom: 1em;
+}
+dl.portletSearch dd{
+    padding: 0 !important;
+}
+dl.portletSearch dd input{
+    display: inline;
+}
+dl.portletSearch dd input.searchButton{
+    padding: 0.5em;
+}
