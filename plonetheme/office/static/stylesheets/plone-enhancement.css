@@ -96,3 +96,6 @@ form[action="enl_subscribers_view"] input[type="submit"]{padding:8px}
 #parent-fieldname-leadImage + p.discreet{width:200px!important}
 #parent-fieldname-image + p.discreet{width:400px!important}
 .plone_jscalendar select{width: auto}
+
+body.template-logged_out #content,body.template-login_form #content,.pb-ajax #login-form{text-align: center;}
+#login-form .field > label{display: inline}
