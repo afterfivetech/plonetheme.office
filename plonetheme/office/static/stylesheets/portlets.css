@@ -66,7 +66,10 @@ dl.portletError dd {
 
 
 /* @group Navigation portlet */
-
+dl.portlet ul.navTree{
+    list-style: none;
+    margin-left: 0;
+}
 dl.portlet ul.navTree li a {
     border: none;
     display: block;
@@ -85,6 +88,7 @@ dl.portlet ul.navTreeLevel0 > .navTreeItem {
     padding: 0.25em 1em;
     border-bottom: 0.1em dotted #ddd;
     line-height: 2em;
+    margin-bottom: 0;
 }
 
 dl.portlet ul.navTreeLevel1 .navTreeItem {
