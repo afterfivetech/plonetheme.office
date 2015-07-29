@@ -193,3 +193,19 @@ dl.portletSearch dd input{
 dl.portletSearch dd input.searchButton{
     padding: 0.5em;
 }
+
+/* @group Login portlet */
+dl.portletLogin dt{
+    margin-bottom: 1em;
+}
+dl.portletLogin dd{
+    padding: 0 !important;
+}
+dl.portletLogin .field #__ac_password,
+dl.portletLogin .field #__ac_name{
+    width: 100% !important;
+}
+dl.portletLogin .field > br{
+    display: none;
+    
+}
