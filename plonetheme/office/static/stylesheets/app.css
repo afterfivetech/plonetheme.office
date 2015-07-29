@@ -5808,15 +5808,18 @@ th.hide-for-touch {
     border-bottom: 2px solid #ccc; }
 
 #user {
-  font-size: inherit;
+  font-size: 12px;
   margin-bottom: 10px; }
   #user a {
     color: #848e9c; }
   #user #action-menu-content {
     list-style: none;
-    margin: 0; }
+    margin: 0;
+    font-size: 12px; }
     #user #action-menu-content li {
       display: inline; }
+    #user #action-menu-content li:after {
+      content: ' | '; }
 
 #search-container {
   margin-bottom: 10px; }
