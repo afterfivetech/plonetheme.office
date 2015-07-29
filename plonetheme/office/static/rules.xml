@@ -36,6 +36,24 @@
     <!--navigation-->
     <replace css:theme-children="#portal-globalnav" css:content-children="#portal-globalnav"/>
     
+    <!--breadcrumbs-->
+    <replace css:content="#portal-breadcrumbs">
+	<ul class="breadcrumbs">
+	    <xsl:for-each css:select="#portal-breadcrumbs > span">
+		<xsl:if css:test="span > a">
+		    <li>
+			<xsl:copy-of css:select="span > a"/>
+		    </li>
+		</xsl:if>
+	    </xsl:for-each>
+	    <xsl:if css:test="#breadcrumbs-current">
+		<li class="current">
+		    <xsl:value-of css:select="#breadcrumbs-current"/>
+		</li>
+	    </xsl:if>
+	</ul>
+    </replace>
+    
     <!--Main search-->
     <replace css:theme-children="#search-container">
         <form class="search-site"><xsl:attribute name="action">
