@@ -5820,6 +5820,9 @@ th.hide-for-touch {
       display: inline; }
     #user #action-menu-content li:after {
       content: ' | '; }
+    #user #action-menu-content li:last-child:after {
+      content: '  ';
+      display: none; }
 
 #search-container {
   margin-bottom: 10px; }
