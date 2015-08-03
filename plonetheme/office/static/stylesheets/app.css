@@ -5793,18 +5793,43 @@ th.hide-for-touch {
 
 #portal-globalnav {
   list-style: none; }
-  #portal-globalnav li {
+  #portal-globalnav > li {
     display: inline;
-    margin-left: 10px; }
-    #portal-globalnav li a {
+    margin-left: 10px;
+    position: relative; }
+    #portal-globalnav > li a {
       color: #242424;
       text-transform: uppercase;
       padding-bottom: 5px;
       font-size: 14px; }
-    #portal-globalnav li a:hover {
+    #portal-globalnav > li > a:hover {
       border-bottom: 2px solid #ccc;
       text-decoration: none; }
-  #portal-globalnav li.selected a {
+    #portal-globalnav > li > ul {
+      z-index: 9999;
+      list-style: none;
+      position: absolute;
+      display: none;
+      width: 195px;
+      left: 0px;
+      border-top: 2px solid #719100;
+      text-align: left;
+      margin-left: 0;
+      box-shadow: 1px 1px 5px #ddd; }
+      #portal-globalnav > li > ul > li {
+        position: relative;
+        background-color: #f9f9f9; }
+        #portal-globalnav > li > ul > li > a {
+          display: block;
+          padding: 12px 10px 12px 20px;
+          text-decoration: none;
+          line-height: 18px;
+          font-weight: 400; }
+      #portal-globalnav > li > ul > li:hover {
+        background-color: #ddd; }
+  #portal-globalnav > li:hover ul {
+    display: block; }
+  #portal-globalnav > li.selected a {
     border-bottom: 2px solid #ccc; }
 
 #user {
