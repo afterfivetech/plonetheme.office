@@ -61,7 +61,7 @@
             <xsl:value-of select="//*[@id='portal-searchbox']/form/@action"/></xsl:attribute>
             <div>
                 <xsl:copy-of css:select="#portal-searchbox input[name='SearchableText']"/>
-                <input type="button" value="Search" />
+                <input type="submit" value="Search" />
                 <xsl:copy-of css:select="#LSResult"/>
             </div>
         </form>
