@@ -74,6 +74,46 @@
         <xsl:copy-of css:select="#portal-siteactions"/>
     </replace>
     
+    <!-- Alert message -->
+    <strip css:content=".portalMessage dd"/>
+    <drop css:content=".portalMessage dt"/>
+    <replace css:content=".portalMessage">
+	<xsl:choose>
+	    <xsl:when css:test=".portalMessage[style]"/>
+	    <xsl:when css:test=".portalMessage.info">
+		<div data-alert="" class="alert-box info radius">
+		    <!--<strong><xsl:apply-templates select="./dt/text()"/></strong>-->
+		    <xsl:apply-templates select="./*"/>
+		    <a href="#" class="close">×</a>
+		</div>
+	    </xsl:when>
+	    <xsl:when css:test=".portalMessage.error">
+		<div data-alert="" class="alert-box alert radius">
+		    <xsl:apply-templates select="./*"/>
+		    <a href="#" class="close">×</a>
+		</div>
+	    </xsl:when>
+	    <xsl:when css:test=".portalMessage.success">
+		<div data-alert="" class="alert-box success radius">
+		    <xsl:apply-templates select="./*"/>
+		    <a href="#" class="close">×</a>
+		</div>
+	    </xsl:when>
+	    <xsl:when css:test=".portalMessage.warning">
+		<div data-alert="" class="alert-box warning radius">
+		    <xsl:apply-templates select="./*"/>
+		    <a href="#" class="close">×</a>
+		</div>
+	    </xsl:when>
+	    <xsl:otherwise>
+		<div data-alert="" class="alert-box ">
+		    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+		    <xsl:apply-templates select="./dd/text()"/>
+		</div>
+	    </xsl:otherwise>
+	</xsl:choose>
+    </replace>
+    
     <!--replace theme content-->
     <replace css:theme-children="#main" css:content-children="#portal-column-content"/>
     <replace css:theme-children="#sidebar-left" css:content-children="#portal-column-one"/>
