@@ -11,10 +11,11 @@ dl.portletError {
 dl.portlet dt {
     padding: 0;
     background: #f9f9f9;
-    line-height: normal;
-    font-size: 16px;
+    line-height: 1.4;
+    font-size: 2.3125rem;
     color: #222;
     margin-bottom: 0;
+    font-weight: normal;
 }
 dl.portlet dt.hiddenStructure {
     padding: 0;
@@ -113,8 +114,9 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 }
 
 .portletCalendar dt {
-    background-color: #eee;
-    font-weight: bold;
+    font-weight: bold !important;
+    font-size: 16px !important;
+    background-color: #eee !important;
     text-align: center;
     line-height: 1.6em;
     border-bottom: none;
@@ -185,9 +187,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 /* @end */
 
 /* @group Search portlet */
-dl.portletSearch dt{
-    margin-bottom: 1em;
-}
 dl.portletSearch dd{
     padding: 0 !important;
 }
