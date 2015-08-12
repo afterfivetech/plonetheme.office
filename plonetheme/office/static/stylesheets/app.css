@@ -5928,7 +5928,7 @@ th.hide-for-touch {
     height: auto;
     width: auto; }
   #search-container form input[type=submit] {
-    display: inline-block;
+    display: inline-block !important;
     border: 1px solid #d4d5d7;
     border-radius: 5px;
     background: #8cab22;
