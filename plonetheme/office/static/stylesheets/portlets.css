@@ -17,6 +17,9 @@ dl.portlet dt {
     margin-bottom: 0;
     font-weight: normal;
 }
+dl.portlet dd{
+    margin-bottom: 0;
+}
 dl.portlet dt.hiddenStructure {
     padding: 0;
 }
