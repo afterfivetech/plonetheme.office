@@ -99,5 +99,4 @@ form[action="enl_subscribers_view"] input[type="submit"]{padding:8px}
 
 body.template-logged_out #content,body.template-login_form #content,.pb-ajax #login-form{text-align: center;}
 #login-form .field > label{display: inline}
-div.field.error{padding:0.5em;};
-}
+div.field.error{padding:0.5em;}
