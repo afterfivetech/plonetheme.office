@@ -15,10 +15,18 @@ setup(name='plonetheme.office',
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
-      keywords='',
-      author='Inigo Consulting',
-      author_email='team@inigo-tech.com',
-      url='http://github.com/inigoconsulting/',
+      #keywords='',
+      #author='Inigo Consulting',
+      #author_email='team@inigo-tech.com',
+      #url='http://github.com/inigoconsulting/',
+
+      #milktea
+      author = 'Afterfive Technologies',
+      author_email = 'afterfive2015@gmail.com',
+      url = 'https://github.com/afterfivetech/plonetheme.office', # URL to the github repo
+      download_url = 'https://github.com/peterldowns/plonetheme.office/tarball/1.0', # Version tag
+      keywords = ['testing', 'logging', 'example'], # arbitrary keywords
+
       license='gpl',
       packages=find_packages(),
       namespace_packages=['plonetheme'],
