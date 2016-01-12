@@ -24,7 +24,7 @@ setup(name='plonetheme.office',
       author = 'Afterfive Technologies',
       author_email = 'afterfive2015@gmail.com',
       url = 'https://github.com/afterfivetech/plonetheme.office', # URL to the github repo
-      download_url = 'https://github.com/afterfivetech/plonetheme.office/tarball/1.0', # Version tag
+      download_url = 'https://github.com/milktea/plonetheme.office/tarball/1.0', # Version tag
       keywords = ['testing', 'logging', 'example'], # arbitrary keywords
 
       license='gpl',
